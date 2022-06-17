@@ -1,21 +1,19 @@
 package ru.job4j.calculator;
 
-import ru.job4j.math.MathFunction;
-
 import static ru.job4j.math.MathFunction.*;
 
 public class MathCalculator {
-    public static double amountOfTransactions() {
-        return MathFunction.difference(5.5, 7) + MathFunction.division(2.0, 4);
+    public static double amountOfTransactions(double first, double second) {
+        return difference(first, second) + division(first, second);
     }
 
-    public static double calculationAmount() {
-        return MathFunction.multiply(4, 8) - MathFunction.sum(3.6, 8.8) - MathFunction.division(9, 4.6) - MathFunction.difference(12.2, 6.0);
+    public static double calculationAmount(double first, double second) {
+        return multiply(first, second) + sum(first, second) + division(first, second) + difference(first, second);
     }
 
     public static void main(String[] args) {
-        double res = amountOfTransactions();
-        double calc = calculationAmount();
+        double res = amountOfTransactions(3.6, 5.0);
+        double calc = calculationAmount(4.5, 8.0);
         System.out.println(res);
         System.out.println(calc);
     }
