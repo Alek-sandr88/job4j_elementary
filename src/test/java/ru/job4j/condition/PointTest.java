@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PointTest {
-
     @Test
     public void whenDistance22Then2() {
         double expected = 2;
