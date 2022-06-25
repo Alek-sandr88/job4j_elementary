@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TriangleTest {
 
     @Test
-    public void whenExist() {
+    public void whenExistTrue() {
         double ab = 2.0;
         double ac = 2.0;
         double bc = 2.0;
@@ -15,10 +15,10 @@ public class TriangleTest {
     }
 
     @Test
-    public void whenNotExistFalse() {
+    public void whenExistFalse() {
         double ab = 2.0;
         double ac = 2.0;
-        double bc = 3.0;
+        double bc = 5.0;
         boolean result = Triangle.exist(ab, ac, bc);
         Assert.assertFalse(result);
     }
