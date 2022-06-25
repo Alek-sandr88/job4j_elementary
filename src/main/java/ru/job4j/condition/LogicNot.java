@@ -14,14 +14,14 @@ public class LogicNot {
     }
 
     public static boolean notPositive(int num) {
-        return num % 2 != 0;
+        return !isPositive(num);
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return notPositive(7) && isPositive(7);
+        return notPositive(num) && isPositive(num);
     }
 
     public static boolean evenOrNotPositive(int num) {
-        return isEven(8) || notEven(8);
+        return isEven(num) || notEven(num);
     }
 }
