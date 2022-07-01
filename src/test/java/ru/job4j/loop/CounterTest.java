@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class CounterTest {
     @Test
-    public void whenSumEvenNumbersFromOneToTenThenThirty() {
+    public void whenSumEvenNumbersFromThreeToTwelveThenFour() {
         int start = 3;
         int finish = 12;
         int result = Counter.sumByEven(start, finish);
@@ -14,7 +14,7 @@ public class CounterTest {
     }
 
     @Test
-    public void whenSumEvenNumbersFromOneToTenThenThi() {
+    public void whenSumEvenNumbersFromFourToEighteenThenEighteenEight() {
         int start = 4;
         int finish = 18;
         int result = Counter.sumByEven(start, finish);
