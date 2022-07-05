@@ -14,6 +14,5 @@ public class Square {
         for (int num : array) {
             System.out.println(num);
         }
-
     }
 }
