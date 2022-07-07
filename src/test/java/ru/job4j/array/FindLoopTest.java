@@ -30,4 +30,26 @@ public class FindLoopTest {
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenDiapasonHas4Then4() {
+        int[] data = new int[]{5, 2, 10, 2, 4};
+        int el = 4;
+        int start = 1;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 4;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenDiapasonHas7ThenMinus1() {
+        int[] data = new int[]{5, 2, 10, 2, 4};
+        int el = 7;
+        int start = 0;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = -1;
+        Assert.assertEquals(expected, result);
+    }
 }
