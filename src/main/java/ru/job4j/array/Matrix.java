@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
-
 public class Matrix {
     public static int[][] multiple(int size) {
         int[][] array = new int[size][size];
@@ -11,9 +9,5 @@ public class Matrix {
             }
         }
         return array;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.deepToString(multiple(2)));
     }
 }
